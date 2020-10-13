@@ -46,8 +46,8 @@ public class CustomSensorView extends View {
         // set up a default Paint object
         paint = new Paint();
         paint.setAntiAlias(true);
-        paint.setStrokeWidth(2);
-        paint.setTextSize(25);
+        paint.setStrokeWidth(4);
+        paint.setTextSize(42);
         paint.setStyle(Paint.Style.STROKE);
         paint.setColor(mColor);
     }
@@ -73,8 +73,7 @@ public class CustomSensorView extends View {
                 (float) (yPoint - radius * Math.cos((double) (angle) / 180 * Math.PI)), paint);
 
         // draw current relative value
-        canvas.drawText(mCaption + (int) (100 * angle / 360) + '%', 0, yPoint / 4, paint);
-
+        canvas.drawText(mCaption + ' ' + (int) (100 * angle / 360) + '%', 3 * xPoint / 4f, 4 * yPoint / 3f, paint);
 
     }
 

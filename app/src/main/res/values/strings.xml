@@ -8,6 +8,6 @@
     <string name="sensor_name">sensor name</string>
     <string name="empty_value">&lt;value&gt;</string>
     <string name="unsupported_sensor_type">Unsupported sensor type</string>
-    <string name="compass_caption">V[0]=</string>
+    <string name="dial_caption">Relval = </string>
     <string name="no_values">No values &#8230;</string>
 </resources>
